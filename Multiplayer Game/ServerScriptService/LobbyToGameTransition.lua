@@ -11,11 +11,9 @@ end)
 
 -- Waiting for players
 repeat
-
     print("Waiting for players")
     wait(20)
     local totalPlayers = #game.Players:GetPlayers()
-
 until totalPlayers >= 2
 
 print("Ready to start the game!")
@@ -40,11 +38,9 @@ for playerKey, player in pairs(Players:GetPlayers()) do
 
         -- Remove the player from the active players list
         for playerKey, player in pairs(activePlayers) do
-
             if player then
                 table.remove(activePlayers, playerKey)
             end
-
         end
 
     end)
