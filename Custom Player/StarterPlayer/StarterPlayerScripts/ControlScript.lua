@@ -6,6 +6,7 @@ local ContextActionService = game:GetService("ContextActionService")
 --  To get information about players in the game then get local player
 local player = game:GetService("Players").LocalPlayer
 
+-- Represents player's mouse
 local mouse = player:GetMouse()
 
 -- Negative values indicate movement in the reverse direction along the Z-axis (forward direction)
