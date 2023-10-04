@@ -18,9 +18,10 @@ local function onMove(actionName, inputState)
         -- Apply forward force to move the player character
         player.Character.HumanoidRootPart.VectorForce.Force = forwardForceVector
 
+    -- When the key is released
     elseif inputState == Enum.UserInputState.End then
 
-        -- Stop applying force when the key is released
+        -- Stop applying force
         player.Character.HumanoidRootPart.VectorForce.Force = Vector3.new(0, 0, 0)
 
     end
