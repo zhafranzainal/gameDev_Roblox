@@ -39,6 +39,7 @@ end
 -- Connect onTouch function to the Touched event of the Treasure object
 treasure.Touched:Connect(onTouch)
 
+-- Continuously increase the time passed by 1 second
 while true do
 
     wait(1)
