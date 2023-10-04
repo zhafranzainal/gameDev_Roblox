@@ -1,6 +1,6 @@
 -- Variables
 
--- To bind actions to specific inputs
+-- To bind actions to specified function when there is specific input
 local ContextActionService = game:GetService("ContextActionService")
 
 --  To get information about players in the game then get local player
