@@ -8,7 +8,7 @@ function finish()
     treasure.Transparency = 1
     treasure.CanCollide = false
 
-    print("You found the treasure in " .. timePassed)
+    print("You found the treasure in " .. timePassed .. " seconds")
 
     if timePassed <= 15 then
         print("You got a gold medal!")
