@@ -1,8 +1,12 @@
 -- Variables
+
+-- To bind actions to specific inputs
 local ContextActionService = game:GetService("ContextActionService")
+
+--  To get information about players in the game
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
-local camera = workspace.CurrentCamera
+
 local mouse = player:GetMouse()
 
 local PLAYER_SPEED = -48000
