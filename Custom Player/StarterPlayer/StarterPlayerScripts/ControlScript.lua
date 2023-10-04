@@ -9,7 +9,7 @@ local player = Players.LocalPlayer
 
 local mouse = player:GetMouse()
 
--- Negative values indicates movement in the reverse direction along the Z-axis (forward direction)
+-- Negative values indicate movement in the reverse direction along the Z-axis (forward direction)
 local PLAYER_SPEED = -48000
 local FORWARD_KEY = Enum.KeyCode.W
 local forwardForceVector = Vector3.new(0, 0, PLAYER_SPEED)
