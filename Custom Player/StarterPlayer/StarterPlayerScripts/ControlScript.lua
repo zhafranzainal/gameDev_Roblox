@@ -3,9 +3,8 @@
 -- To bind actions to specific inputs
 local ContextActionService = game:GetService("ContextActionService")
 
---  To get information about players in the game
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
+--  To get information about players in the game then get local player
+local player = game:GetService("Players").LocalPlayer
 
 local mouse = player:GetMouse()
 
