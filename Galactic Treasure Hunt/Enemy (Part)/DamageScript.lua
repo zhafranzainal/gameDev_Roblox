@@ -13,7 +13,7 @@ local function onTouch(otherPart)
 
         -- Create an explosion at the character's position and wait for 3 seconds before continuing
         local explosion = Instance.new("Explosion", workspace)
-        explosion.Position = character:GetPrimaryPartCFrame().p
+        explosion.Position = character:GetPivot().p
         wait(3)
 
         -- Restore the character to the workspace
