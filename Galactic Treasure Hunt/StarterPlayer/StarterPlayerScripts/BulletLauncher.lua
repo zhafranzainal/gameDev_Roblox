@@ -3,9 +3,9 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local launchBullet = ReplicatedStorage:WaitForChild("LaunchBullet")
+local pingChecker = ReplicatedStorage:WaitForChild("Ping")
 local destroyBullet = ReplicatedStorage:WaitForChild("DestroyBullet")
 local destroyEnemy = ReplicatedStorage:WaitForChild("DestroyEnemy")
-local pingChecker = ReplicatedStorage:WaitForChild("Ping")
 local bullet = ReplicatedStorage:WaitForChild("Bullet")
 
 local player = Players.LocalPlayer
