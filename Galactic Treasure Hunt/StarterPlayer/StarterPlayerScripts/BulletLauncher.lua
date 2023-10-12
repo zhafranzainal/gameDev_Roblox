@@ -43,10 +43,8 @@ local function onLaunch()
                 bulletClone:Destroy()
                 destroyBullet:FireServer(serverBullet)
 
-                if other.Name == "EnemyBall" then
-                    destroyEnemy:FireServer(other)
-                    other:Destroy()
-                end
+                destroyEnemy:FireServer(other)
+                other:Destroy()
 
             end
 
