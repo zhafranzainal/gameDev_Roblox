@@ -6,6 +6,7 @@ local ToggleDialogueEvent = game:GetService("ReplicatedStorage").ToggleEvents.To
 
 local DialogueEvent = game:GetService("ReplicatedStorage").GuiEvents.DialogueEvent
 local TaskEvent = game:GetService("ReplicatedStorage").GuiEvents.TaskEvent
+local TimerEvent = game:GetService("ReplicatedStorage").GuiEvents.TimerEvent
 
 -- Reference to the NPC model
 local npcModel = game.Workspace.Wulfric
@@ -35,6 +36,9 @@ local function task1()
 
     -- Show task GUI
     TaskEvent:FireAllClients("Explore School")
+
+    -- Show timer GUI
+    TimerEvent:FireAllClients(20)
 
 end
 
