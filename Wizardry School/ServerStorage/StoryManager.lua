@@ -2,7 +2,10 @@
 -- Define a module for managing a game story
 local StoryManager = {}
 
+local ToggleDialogueEvent = game:GetService("ReplicatedStorage").ToggleEvents.ToggleDialogueEvent
+
 local DialogueEvent = game:GetService("ReplicatedStorage").GuiEvents.DialogueEvent
+local TaskEvent = game:GetService("ReplicatedStorage").GuiEvents.TaskEvent
 
 -- Reference to the NPC model
 local npcModel = game.Workspace.Wulfric
@@ -26,6 +29,12 @@ local function task1()
 
     DialogueEvent:FireAllClients(npcImage, npcName, "Feel free to explore the castle while I'm preparing the class.")
     wait(7)
+
+    -- Hide dialogue GUI
+    ToggleDialogueEvent:FireAllClients(false)
+
+    -- Show task GUI
+    TaskEvent:FireAllClients("Explore School")
 
 end
 
