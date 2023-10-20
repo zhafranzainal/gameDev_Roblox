@@ -10,14 +10,24 @@ local TimerEvent = game:GetService("ReplicatedStorage").GuiEvents.TimerEvent
 
 -- Reference to the NPC model
 local npcModel = game.Workspace.Wulfric
-local npcImage = "rbxassetid://8856044080"
+local npcImage = "rbxassetid://9189127821"
 local npcName = npcModel.Name
+
+local npcHumanoid = npcModel:WaitForChild("Humanoid")
+local npcAnimator = npcHumanoid:WaitForChild("Animator")
+local npcAnimation = npcAnimator:WaitForChild("Animation")
 
 -- Send signal as server
 local function task1()
 
+    npcAnimation.AnimationId = "rbxassetid://15117018270"
+    local animatiomTrack = npcAnimator:LoadAnimation(npcAnimation)
+    animatiomTrack:Play()
+
     DialogueEvent:FireAllClients(npcImage, npcName, "Welcome to Wizardry School!")
     wait(5)
+
+    animatiomTrack:Stop()
 
     DialogueEvent:FireAllClients(npcImage, npcName, "I am Professor Wulfric.")
     wait(3)
